@@ -1,0 +1,28 @@
+<html>
+<head>
+<title> Bean! </title>
+</head>
+<body>
+<script type = "text/javascript">
+
+var count = function(str,ch) {
+
+    var recCount = function(str,ch,pos) {
+        if(pos >= str.length) { 
+            return 0
+        }else {
+            return recCount(str,ch,pos+1) + (str.charAt(pos) == ch ? 1: 0)
+        }
+    }
+    return recCount(str,ch,0)
+};
+
+var beanC = function(str) {
+        return count(str,'B')
+};
+document.write(beanC("One B, two B, three B, four B.."))
+
+
+</script>
+</body>
+</html>

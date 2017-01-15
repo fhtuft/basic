@@ -1,0 +1,27 @@
+<html>
+<head>
+<title> chess </title>
+</head>
+<body>
+<script type = "text/javascript">
+
+var grid = function(size) {
+    var out = ""
+    for(var i = 0; i <size; i=i+1) {
+        for(var j = 0; j < size; j=j+1) {
+            if(j%2 == 0) 
+                out = out + " "
+            else
+                out = out + "#"
+        }
+        out = out + "\n"
+    }
+    return out;
+};
+
+document.write(grid(8))
+
+
+</script>
+</body>
+</html>

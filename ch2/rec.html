@@ -1,0 +1,21 @@
+<html>
+<head>
+<title> chess </title>
+</head>
+<body>
+<script type = "text/javascript">
+
+var isEvan = function(num) {
+    if(num == 0) 
+        return true
+    if(num == 1)
+        return false
+    return isEvan(num - 2)    
+};
+
+document.write(isEvan(40))
+
+
+</script>
+</body>
+</html>

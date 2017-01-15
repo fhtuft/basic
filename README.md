@@ -1,1 +1,1 @@
-# my_javascript
+Exercises from Eloquent JavaScript
